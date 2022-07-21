@@ -140,6 +140,10 @@ ul {
   clear: both;
 }
 
+#filter {
+  padding-bottom: 20px;
+}
+
 
 @keyframes App-logo-spin {
   from {
@@ -150,3 +154,4 @@ ul {
     transform: rotate(360deg);
   }
 }
+
