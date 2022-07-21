@@ -1,25 +1,22 @@
 import React from "react";
+import HogTile from "./HogTile";
+
+import 'semantic-ui-css/semantic.min.css'
+import '../index.css';
 
 function HogList({hogs}) {
 
   const hogArray = hogs.map(hog => {
 
     return (
-      <>
-        <h3>Name: {hog.name}</h3>
-        <p>specialty: {hog.specialty}</p>
-        <p>greased: {}</p>
-    weight: 2.0,
-    "highest medal achieved": "bronze",
-    image:
-      </>
+      <HogTile key= {hog.name} hog={hog}/>
     )
   })
 
 	return (
-		<div>
-			
-		</div>
+    <div className="ui three stackable cards">
+        {hogArray}
+    </div>
 	);
 }
 
